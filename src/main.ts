@@ -68,7 +68,7 @@ app.post('/input', (req: Request, res: Response) => {
     });
   }
 
-  fs.appendFileSync(target_file, `${result}\n`);
+  fs.appendFileSync(target_file, `${result}`);
 
   return res.status(201).json({
     error: false,
